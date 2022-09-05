@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      vaccine_category.belongsTo(models.certificate);
+      vaccine_category.belongsTo(models.certificate)
     }
   }
   vaccine_category.init({

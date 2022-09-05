@@ -11,8 +11,8 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      certificate.belongsTo(models.vaccine_register);
-      certificate.hasOne(models.vaccine_category);
+      certificate.belongsTo(models.vaccine_register)
+      certificate.hasOne(models.vaccine_category)
     }
   }
   certificate.init({
