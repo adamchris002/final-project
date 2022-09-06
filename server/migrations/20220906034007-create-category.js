@@ -1,7 +1,7 @@
 'use strict';
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable('vaccine_registers', {
+    await queryInterface.createTable('categories', {
       id: {
         allowNull: false,
         autoIncrement: true,
@@ -11,17 +11,8 @@ module.exports = {
       name: {
         type: Sequelize.STRING
       },
-      nik: {
+      certificateId: {
         type: Sequelize.INTEGER
-      },
-      age: {
-        type: Sequelize.INTEGER
-      },
-      ktp_image: {
-        type: Sequelize.STRING
-      },
-      place: {
-        type: Sequelize.STRING
       },
       createdAt: {
         allowNull: false,
@@ -34,6 +25,6 @@ module.exports = {
     });
   },
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable('vaccine_registers');
+    await queryInterface.dropTable('categories');
   }
 };

@@ -11,15 +11,16 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      certificate.belongsTo(models.vaccine_register)
-      certificate.hasOne(models.vaccine_category)
+      certificate.belongsTo(models.register);
+      certificate.hasOne(models.category);
     }
   }
   certificate.init({
     name: DataTypes.STRING,
     image: DataTypes.STRING,
     date: DataTypes.DATE,
-    place: DataTypes.STRING
+    place: DataTypes.STRING,
+    registerId: DataTypes.INTEGER
   }, {
     sequelize,
     modelName: 'certificate',

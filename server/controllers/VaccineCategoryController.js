@@ -1,9 +1,9 @@
-const { vaccine_category } = require("../models");
+const { category } = require("../models");
 
 class VaccineCategoryController {
   static async getVaccine(req, res) {
     try {
-      let result = await vaccine_category.findAll();
+      let result = await category.findAll();
       res.json(result);
     } catch (err) {
       res.json(err);
@@ -14,7 +14,7 @@ class VaccineCategoryController {
       const id = Number(req.params.id);
       const { name } = req.body;
 
-      let result = await vaccine_category.update(
+      let result = await category.update(
         {
           name,
         },

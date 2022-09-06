@@ -1,13 +1,13 @@
 const {
-  vaccine_register,
+  register,
   certificate,
-  vaccine_category,
+  category,
 } = require("../models");
 
 class VaccineRegisterController {
   static async getData(req, res) {
     try {
-      let result = await vaccine_register.findAll();
+      let result = await register.findAll();
       res.json(result);
     } catch (err) {
       res.json(err);
@@ -16,7 +16,8 @@ class VaccineRegisterController {
   static async create(req, res) {
     try {
       const { name, nik, age, ktp_image, place, jenis_vaksin } = req.body;
-      let result = await vaccine_register.create({
+      const image = "https://i0.wp.com/infobanknews.com/wp-content/uploads/2021/03/Sertifikat-vaksin.jpg?fit=640%2C369&ssl=1&resize=1280%2C720";
+      let result = await register.create({
         name,
         nik,
         age,
@@ -31,7 +32,7 @@ class VaccineRegisterController {
         place,
       });
 
-      let result_category = await vaccine_category.create({
+      let result_category = await category.create({
         jenis_vaksin,
       });
 
@@ -45,7 +46,7 @@ class VaccineRegisterController {
       const id = Number(req.params.id);
       const { name, nik, age, ktp_image, place } = req.body;
 
-      let result = await vaccine_register.update(
+      let result = await register.update(
         {
           name,
           nik,
@@ -73,7 +74,7 @@ class VaccineRegisterController {
     try {
       const id = Number(req.params.id);
 
-      let result = await vaccine_register.destroy({
+      let result = await register.destroy({
         where: { id },
       });
 
