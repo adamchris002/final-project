@@ -1,22 +1,40 @@
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.css';
-import 'bootstrap/dist/js/bootstrap';
-import React from 'react';
+import "./App.css";
+import "bootstrap/dist/css/bootstrap.css";
+import "bootstrap/dist/js/bootstrap";
+import React from "react";
 
 //react-router-dom
-// import {Routes, Route} from "react-router-dom"
+import { Routes, Route } from "react-router-dom";
 
 //components
-import {NavBar, Footer} from './components'
+import { NavBar, Footer } from "./components";
 
 //pages
-import {Login, Register, Vaccine_Register, Certificate, category} from './pages'
+import {
+  Login,
+  Register,
+  RegisterVaccine,
+  Certificate,
+  Category,
+} from "./pages";
 
 function App() {
   return (
-    <div className="App">
+    <div className="main-content">
       <NavBar></NavBar>
-      <Login></Login>
+      {/* <Routes>
+        <Route path="/" element={<Login></Login>}></Route>
+        <Route path="/register" element={<Register></Register>}></Route>
+        <Route
+          path="/register-vaccine"
+          element={<RegisterVaccine></RegisterVaccine>}
+        ></Route>
+        <Route
+          path="/certificate"
+          element={<Certificate></Certificate>}
+        ></Route>
+        <Route path="/category" element={<Category></Category>}></Route>
+      </Routes> */}
       <Footer></Footer>
     </div>
   );

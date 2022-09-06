@@ -76,14 +76,14 @@ body {
 }
 
 .tes {
-  float: right;
-  justify-content: center;
-  display: flex;
+  justify-content: right;
 }
 
 .header {
   background: rgb(131, 185, 244);
   margin-top: -8px;
+  display: flex;
+  height: 80px;
 }
 
 footer {
@@ -118,5 +118,96 @@ footer {
 }
 
 .ini-footer {
+  margin-top: 25px;
+}
+
+.nik-input {
+  float: right;
+  margin-right: 20px;
+  width: 500px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+}
+
+.name  {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.name-input {
+  float: right;
+  margin-right: 20px;
+  width: 500px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+}
+
+.age {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.age-input {
+  float: right;
+  margin-right: 20px;
+  width: 500px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+}
+
+.nik {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.ktp_image {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.ktp_image-input {
+  float: right;
+  margin-right: 20px;
+  width: 500px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+}
+
+.place {
+  text-align: center;
+  padding-bottom: 20px;
+}
+.place-input {
+  float: right;
+  margin-right: 20px;
+  width: 500px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+}
+
+.carousel {
+  margin-top: 25px;
+  width: 1000px;
+  height: 520px;
+}
+
+.carousel img {
+  width: 1000px;
+  height: 520px;  
+}
+
+.RegisterPage {
+  display: flex;
+  justify-content: center;
+}
+
+.judulRegisterPage {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+.tombol {
   margin-top: 25px;
 }
