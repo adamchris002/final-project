@@ -1,7 +1,7 @@
-import "./App.css";
+import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap/dist/js/bootstrap";
-import React from "react";
+import "./App.css";
 
 //react-router-dom
 import { Routes, Route } from "react-router-dom";
@@ -22,19 +22,16 @@ function App() {
   return (
     <div className="main-content">
       <NavBar></NavBar>
-      {/* <Routes>
+      <Routes>
         <Route path="/" element={<Login></Login>}></Route>
-        <Route path="/register" element={<Register></Register>}></Route>
+        <Route path="register" element={<Register></Register>}></Route>
         <Route
-          path="/register-vaccine"
+          path="register-vaccine"
           element={<RegisterVaccine></RegisterVaccine>}
         ></Route>
-        <Route
-          path="/certificate"
-          element={<Certificate></Certificate>}
-        ></Route>
-        <Route path="/category" element={<Category></Category>}></Route>
-      </Routes> */}
+        <Route path="certificate" element={<Certificate></Certificate>}></Route>
+        <Route path="category" element={<Category></Category>}></Route>
+      </Routes>
       <Footer></Footer>
     </div>
   );
