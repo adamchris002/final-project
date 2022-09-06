@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+:root {
+  font-size: 15px;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+.foto-nav {
+  width: 50px;
+  height: 45px;
+}
+
+.box-login {
+  background: white;
+  border-radius: 15px;
+  border-style: solid;  
+  border-width: thin;
+  width: 700px;
+  align-items: center;
+  text-align: center;
+}
+
+.username {
+  margin-top: 25px;
+  text-align: center;
+}
+
+.username-input {
+  float: right;
+  margin-right: 20px;
+  width: 500px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+}
+
+.password-input {
+  float: right;
+  margin-right: 20px;
+  width: 500px;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: thin;
+}
+
+.password {
+  margin-top: 25px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.tombol-login {
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.logo-login {
+  height: 200px;
+  width: 200px;
+  text-align: center;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+
+.halaman-login {
+  margin-top: 25px;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.tes {
+  float: right;
+  justify-content: center;
+  display: flex;
+}
+
+.header {
+  background: rgb(131, 185, 244);
+  margin-top: -8px;
+}
+
+footer {
+  background: black;
+  opacity: 80%;
+  color: white;
+  padding-top: 20px;
+  margin-bottom: -10px;
+  height: 200px;
+}
+
+.instagram {
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.facebook {
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.twitter {
+  margin-left: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.tombol-help {
+  float: right;
+}
+
+.ini-footer {
+  margin-top: 25px;
+}
